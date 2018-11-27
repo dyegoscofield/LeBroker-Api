@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetFuncionario" targetNamespace="http://tempuri.org/DataSetFuncionario.xsd" xmlns:mstns="http://tempuri.org/DataSetFuncionario.xsd" xmlns="http://tempuri.org/DataSetFuncionario.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetFuncionario" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetFuncionario" msprop:Generator_UserDSName="DataSetFuncionario">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Funcionario" msprop:Generator_TableClassName="FuncionarioDataTable" msprop:Generator_TableVarName="tableFuncionario" msprop:Generator_TablePropName="Funcionario" msprop:Generator_RowDeletingName="FuncionarioRowDeleting" msprop:Generator_RowChangingName="FuncionarioRowChanging" msprop:Generator_RowEvHandlerName="FuncionarioRowChangeEventHandler" msprop:Generator_RowDeletedName="FuncionarioRowDeleted" msprop:Generator_UserTableName="Funcionario" msprop:Generator_RowChangedName="FuncionarioRowChanged" msprop:Generator_RowEvArgName="FuncionarioRowChangeEvent" msprop:Generator_RowClassName="FuncionarioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnPropNameInTable="NomeColumn" msprop:Generator_UserColumnName="Nome" type="xs:string" minOccurs="0" />
+              <xs:element name="Sobrenome" msprop:Generator_ColumnVarNameInTable="columnSobrenome" msprop:Generator_ColumnPropNameInRow="Sobrenome" msprop:Generator_ColumnPropNameInTable="SobrenomeColumn" msprop:Generator_UserColumnName="Sobrenome" type="xs:string" minOccurs="0" />
+              <xs:element name="DataAdmissao" msprop:Generator_ColumnVarNameInTable="columnDataAdmissao" msprop:Generator_ColumnPropNameInRow="DataAdmissao" msprop:Generator_ColumnPropNameInTable="DataAdmissaoColumn" msprop:Generator_UserColumnName="DataAdmissao" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="FuncionarioKey1">
+      <xs:selector xpath=".//mstns:Funcionario" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
